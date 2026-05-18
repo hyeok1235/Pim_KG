@@ -7,7 +7,6 @@ __pycache__/
 *.egg
 *.egg-info/
 dist/
-build/
 eggs/
 parts/
 var/
@@ -16,7 +15,6 @@ develop-eggs/
 .installed.cfg
 lib/
 lib64/
-*.so
 .env
 .venv
 env/
@@ -29,16 +27,25 @@ ENV/
 
 # C / C++
 *.o
+*.os
 *.a
-*.out
 *.exe
 *.dll
 *.dylib
 *.dSYM/
 
-# SCons
+# SCons artifacts
 .sconsign.dblite
 .scons_temp/
+googletest/build/PIMSimulator/bin/
+googletest/build/PIMSimulator/sim
+
+# CMake build artifacts
+googletest/build/CMakeFiles/
+googletest/build/CMakeCache.txt
+googletest/build/CTestTestfile.cmake
+googletest/build/Makefile
+googletest/build/cmake_install.cmake
 
 # OS
 .DS_Store
@@ -49,4 +56,4 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
-.claude/
+.claude

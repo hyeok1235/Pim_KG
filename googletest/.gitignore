@@ -1,5 +1,9 @@
-# Ignore CI build directory
-build/
+# Ignore CI build directory (but keep PIMSimulator source)
+build/*
+!build/PIMSimulator/
+build/PIMSimulator/bin/
+build/PIMSimulator/sim
+build/PIMSimulator/.sconsign.dblite
 xcuserdata
 cmake-build-debug/
 .idea/
